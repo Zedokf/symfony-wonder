@@ -14,7 +14,7 @@
                 <div class="d-flex flex-row-nowrap align-items-center pb-30">
                     <h3 class="mr-10">{{ question.title }}</h3>
                     <div class="question-tag">QUESTION</div>
-                    <img class="avatar ml-auto" src="/{{ question.author.picture }}" alt="user-img">
+                    <img class="avatar ml-auto" src="{{ asset(question.author.picture) }}" alt="user-img">
                 </div>
                 <p class="question-text">{{ question.content }}</p>
                 {% if question.comments is not empty %}

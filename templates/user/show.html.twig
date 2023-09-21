@@ -5,7 +5,7 @@
     <div class="block mb-20">
         <h2 class="pb-30">{{ user.fullname }}</h2>
         <div class="d-flex flex-row-nowrap">
-            <img src="{{ user.picture }}" alt="{{user.fullname}} image" class="mr-10 profile-picture">
+            <img src="{{ asset(user.picture) }}" alt="{{user.fullname}} image" class="mr-10 profile-picture">
             <ul>
                 <li class="mb-10">
                     <strong class="mr-10">Prénom:</strong> {{ user.firstname }}
